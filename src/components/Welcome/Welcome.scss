@@ -1,0 +1,27 @@
+.welcome {
+background-color: rgba(104, 145, 63, 0.998);
+height: 100vh;
+font-family: avenir;
+letter-spacing: .2rem;
+font-size: 2rem;
+
+}
+.sign-in{
+    padding: 1rem;
+    background-color: aquamarine;
+    border-radius: 6px;
+    margin-top: 2rem;
+    font-weight: bold;
+
+    &:hover {
+        background-color: lightgreen;
+    }
+    &:active {
+        background-color: green;
+        outline: .1rem aqua solid;
+    }
+}
+
+h1 {
+
+}

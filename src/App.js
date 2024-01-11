@@ -3,7 +3,9 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import Welcome from "./components/Welcome/Welcome";
-import { BrowserRouter, Routes, Route,} from 'react-router-dom';
+import ChatBox from "./components/Chatbox/Chatbox";
+import NotFound from "./components/NotFound/NotFound";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 
 function App() {
@@ -12,15 +14,18 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <NavBar/>
-        <Routes>
-          <Route path='/' element={<Welcome />} />
-          <Route path='/' element={<Success/>}/>
-          <Route path='*' element={<NotFound />} />
-        </Routes>
+        <div className="App">
+          <NavBar />
+          <Routes>
+            <Route path="/" element={user ? <Navigate to="/chat"/> : <Welcome/>}/>
+            <Route path="/chat" element={user ? <ChatBox/> : <Navigate to="/"/>} />
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+          {/* {!user ? <Welcome /> : <ChatBox />} */}
+        </div>
       </BrowserRouter>
     </>
-  )
+  );
 }
 
 export default App;

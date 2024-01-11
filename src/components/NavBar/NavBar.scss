@@ -1,6 +1,37 @@
-.nav {
-  list-style: none;
-  padding: 2rem;
-  margin: 0;
-  height: 100vh;
+.nav-bar {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #adddf7;
+  color: #070729;
+  height: 60px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  &__head {
+    font-family: Avenir;
+    padding: .5rem .5rem;
+    &:hover {
+      border-bottom: .1rem solid #061d29;;
+    }
+  }
+  &__in {
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    color: #88dded;
+    border: 0;
+    background-color: #1c2c4c;
+    font-weight: 600;
+  }
+  &__out {
+    @extend .nav-bar__in;
+    &:hover {
+      color: #1c2c4c;
+      background-color: #88dded;
+    }
+  }
 }
+
