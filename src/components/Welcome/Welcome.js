@@ -11,10 +11,9 @@ const Welcome = () => {
             <button className="sign-in">
                 <button
                     onClick={googleSignIn}
-                    src={GoogleSignin}
                     alt="Sign In!"
                     type="button"
-                />
+                />SIGN IN
             </button>
         </main>
     );
