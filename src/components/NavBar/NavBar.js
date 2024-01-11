@@ -1,15 +1,4 @@
-<<<<<<< HEAD
-import "./NavBar.scss";
-function NavBar() {
-  return (
-    <nav>
-      <ul className="nav"></ul>
-    </nav>
-  );
-}
-
-export default NavBar;
-=======
+import "./NavBar.scss"
 import React, { useState } from "react";
 import { auth } from "../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -48,4 +37,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
->>>>>>> backend

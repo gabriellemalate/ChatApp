@@ -1,5 +1,4 @@
 import React from "react";
-import GoogleSignin from "../img/btn_google_signin_dark_pressed_web.png";
 
 const Welcome = () => {
     const googleSignIn = () => {
@@ -8,13 +7,13 @@ const Welcome = () => {
     return (
         <main className="welcome">
             <h1>Welcome to Chat App!</h1>
-            <button className="sign-in">
                 <button
+                    className="sign-in"
                     onClick={googleSignIn}
                     alt="Sign In!"
                     type="button"
-                />SIGN IN
-            </button>
+                >SIGN IN
+                </button>
         </main>
     );
 };
