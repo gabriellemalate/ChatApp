@@ -1,6 +1,11 @@
 .chatbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 5rem;
     &__form {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         right: 0;
         padding: 1.5rem 1rem 1.5rem;
@@ -35,6 +40,9 @@
     &__msgs-wrap {
         display: flex;
         flex-direction: column-reverse;
+        align-self: center;
+        width: 98%;
+        margin-top: 1rem;
     }
 }
 
@@ -52,25 +60,34 @@
 }
 
 .user-message {
-    margin: .5rem;
+    margin: .5rem ;
     border: 1px solid black;
     border-radius: 6px;
     // display: inline-block;
     padding: .5rem;
     background-color: aliceblue;
+    padding: 1rem;
 
     &__user {
         font-weight: 600;
+        width: fit-content;
+        padding-bottom: .4rem;
     }
-    // &__message {
-
-    // }
+    &__message {
+        padding-top: .5rem;
+        background-color: aliceblue;
+        border-radius: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: .4rem;
+        width: fit-content;
+    }
 }
 
 .gabrielle.malate {
-    background-color: rgb(229, 189, 248);
+    background-color: rgb(214, 152, 250);
 }
 
 .Steven.Faliszewski {
-    background-color: aquamarine;
+    background-color: rgb(145, 238, 207);
 }

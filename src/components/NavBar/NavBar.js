@@ -25,11 +25,11 @@ const NavBar = () => {
                 </button>
             ) : (
                 <button className="nav-bar__in">
-                    <button
+                    {/* <button
                         onClick={googleSignIn}
                         alt="sign in with google"
                         type="button"
-                    />SIGN IN
+                    />SIGN IN */}
                 </button>
             )}
         </nav>

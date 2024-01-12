@@ -63,7 +63,7 @@ const ChatBox = () => {
             name: auth.currentUser.displayName,
         });
         
-        
+        formRef.current.messageInput.value = "";
     }
 
     console.log(auth.currentUser.displayName)
